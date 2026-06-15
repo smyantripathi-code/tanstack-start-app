@@ -15,7 +15,7 @@ const seasons = [
       { name: 'Iron Mountain League Meet 2', result: 'Competed' },
       { name: 'Iron Mountain League Meet 3', result: 'Competed' },
       { name: 'Iron Mountain League Tournament', result: 'Finalist Alliance (1st Selected) · Inspire Award 2nd Place', highlight: true },
-      { name: 'Oregon Championship – Purple Division', result: 'Competed' },
+      { name: 'Oregon Championship - Purple Division', result: 'Competed' },
       { name: 'Oregon Championship', result: 'Reach Award 2nd Place', highlight: true },
     ],
   },
@@ -29,7 +29,7 @@ const seasons = [
       { name: 'Rose City League Meet 2', result: 'Competed' },
       { name: 'Rose City League Meet 3', result: 'Competed' },
       { name: 'Rose City League Tournament', result: 'Design Award', highlight: true },
-      { name: 'Oregon Championship – Gold Division', result: 'Competed' },
+      { name: 'Oregon Championship - Gold Division', result: 'Competed' },
       { name: 'Oregon Championship', result: 'Competed' },
     ],
   },
@@ -44,15 +44,15 @@ const seasons = [
       { name: 'OR Rose City League Meet 2', result: 'Competed' },
       { name: 'OR Rose City League Meet 3', result: 'Competed' },
       { name: 'OR Rose City League Tournament', result: 'Control Award', highlight: true },
-      { name: 'Oregon FTC Championship – Blue Division', result: 'Competed' },
+      { name: 'Oregon FTC Championship - Blue Division', result: 'Competed' },
       { name: 'Oregon FTC Championship', result: 'Competed' },
     ],
   },
 ]
 
 const awards = [
-  { year: '2025', award: 'Inspire Award 2nd Place', event: 'Iron Mountain League Tournament', icon: '◆' },
-  { year: '2025', award: 'Finalist Alliance – 1st Team Selected', event: 'Iron Mountain League Tournament', icon: '🏆' },
+  { year: '2025', award: 'Inspire Award 2nd Place', event: 'Iron Mountain League Tournament', icon: '🏆' },
+  { year: '2025', award: 'Finalist Alliance - 1st Team Selected', event: 'Iron Mountain League Tournament', icon: '🏆' },
   { year: '2025', award: 'Reach Award 2nd Place', event: 'Oregon State Championship', icon: '🥈' },
   { year: '2024', award: 'Design Award', event: 'Rose City League Tournament', icon: '🏆' },
   { year: '2023', award: 'Control Award', event: 'OR Rose City League Tournament', icon: '🏆' },
@@ -65,7 +65,7 @@ const milestones = [
   { year: '2024', label: 'Design Award', desc: 'Earned the Design Award at the Rose City League Tournament during INTO THE DEEP season.' },
   { year: '2024', label: 'Back-to-Back States', desc: 'Qualified for Oregon Championship for the second consecutive year.' },
   { year: '2025', label: 'League Finals Finalists', desc: 'Named Finalist Alliance 1st Team Selected at Iron Mountain League Tournament.' },
-  { year: '2025', label: 'Inspire Award', desc: 'Earned 2nd Place Inspire Award — the most prestigious award in FTC — at League Tournament.' },
+  { year: '2025', label: 'Inspire Award', desc: 'Earned 2nd Place Inspire Award - the most prestigious award in FTC - at League Tournament.' },
   { year: '2025', label: 'State Reach Award', desc: 'Recognized for outstanding outreach and community engagement at Oregon State Championship.' },
 ]
 
@@ -79,7 +79,7 @@ export default function HistoryPage() {
           <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', color: 'var(--fire)', letterSpacing: '0.2em', marginBottom: '0.5rem' }}>// Team History</div>
           <h1 style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 900, color: 'var(--white)', marginBottom: '0.75rem' }}>Our History</h1>
           <p style={{ color: 'var(--text-muted)', maxWidth: '560px', lineHeight: 1.7, fontSize: '0.95rem' }}>
-            Founded in 2023, Wire Fire has competed in 3 seasons and 21 official FTC events — earning awards and advancing to the Oregon State Championship every year.
+            Founded in 2023, Wire Fire has competed in 3 seasons and 21 official FTC events - earning awards and advancing to the Oregon State Championship every year.
           </p>
           {/* Quick stats */}
           <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', marginTop: '2rem' }}>
@@ -106,7 +106,7 @@ export default function HistoryPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1rem' }}>
             {awards.map((a, i) => (
               <div key={i} style={{
-                background: 'var(--dark-card)', border: '1px solid rgba(255,69,0,0.2)',
+                background: 'var(--dark-card)', border: '1px solid rgba(255,0,106,0.2)',
                 borderRadius: '0.75rem', padding: '1.25rem',
               }}>
                 <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>{a.icon}</div>
@@ -128,16 +128,16 @@ export default function HistoryPage() {
               <div key={season.year}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
                   <div style={{ fontFamily: "'Orbitron', sans-serif", fontSize: '1.25rem', fontWeight: 900, color: 'var(--white)' }}>{season.year}</div>
-                  <div style={{ background: 'rgba(255,69,0,0.12)', border: '1px solid rgba(255,69,0,0.25)', color: 'var(--fire)', fontSize: '0.72rem', fontWeight: 700, padding: '0.2rem 0.65rem', borderRadius: '0.25rem', letterSpacing: '0.08em' }}>{season.game}</div>
+                  <div style={{ background: 'rgba(255,0,106,0.12)', border: '1px solid rgba(255,0,106,0.25)', color: 'var(--fire)', fontSize: '0.72rem', fontWeight: 700, padding: '0.2rem 0.65rem', borderRadius: '0.25rem', letterSpacing: '0.08em' }}>{season.game}</div>
                   <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>{season.league}</div>
-                  {season.note && <div style={{ background: 'rgba(232,0,106,0.1)', border: '1px solid rgba(232,0,106,0.2)', color: 'var(--pink-soft)', fontSize: '0.7rem', fontWeight: 700, padding: '0.2rem 0.65rem', borderRadius: '0.25rem' }}>{season.note}</div>}
+                  {season.note && <div style={{ background: 'rgba(255,0,106,0.1)', border: '1px solid rgba(255,0,106,0.2)', color: 'var(--pink-soft)', fontSize: '0.7rem', fontWeight: 700, padding: '0.2rem 0.65rem', borderRadius: '0.25rem' }}>{season.note}</div>}
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                   {season.events.map((e, i) => (
                     <div key={i} style={{
                       display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem',
-                      background: e.highlight ? 'rgba(255,69,0,0.06)' : 'var(--dark-card)',
-                      border: `1px solid ${e.highlight ? 'rgba(255,69,0,0.2)' : 'var(--dark-border)'}`,
+                      background: e.highlight ? 'rgba(255,0,106,0.06)' : 'var(--dark-card)',
+                      border: `1px solid ${e.highlight ? 'rgba(255,0,106,0.2)' : 'var(--dark-border)'}`,
                       borderRadius: '0.4rem', padding: '0.65rem 1rem', flexWrap: 'wrap',
                     }}>
                       <span style={{ fontSize: '0.85rem', color: 'var(--text)', fontWeight: e.highlight ? 600 : 400 }}>{e.name}</span>
@@ -160,7 +160,7 @@ export default function HistoryPage() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               {milestones.map((m, i) => (
                 <div key={i} style={{ position: 'relative' }}>
-                  <div style={{ position: 'absolute', left: '-1.9rem', top: '4px', width: '10px', height: '10px', borderRadius: '50%', background: 'var(--fire)', boxShadow: '0 0 8px rgba(255,69,0,0.6)' }} />
+                  <div style={{ position: 'absolute', left: '-1.9rem', top: '4px', width: '10px', height: '10px', borderRadius: '50%', background: 'var(--fire)', boxShadow: '0 0 8px rgba(255,0,106,0.6)' }} />
                   <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.68rem', color: 'var(--fire)', letterSpacing: '0.15em', marginBottom: '0.2rem' }}>{m.year}</div>
                   <div style={{ fontWeight: 700, color: 'var(--white)', fontSize: '0.9rem', marginBottom: '0.25rem' }}>{m.label}</div>
                   <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>{m.desc}</div>
