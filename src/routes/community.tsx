@@ -6,38 +6,13 @@ export const Route = createFileRoute('/community')({
 })
 
 const outreachEvents = [
-  { title: 'Season Kickoff Event', desc: 'Co-hosted the 2024 FTC Season Kickoff at Lake Oswego High School with 150+ attendees and 10+ teams. Featured educational presentations on CAD, Odometry, Engineering Portfolios, and more.', icon: '🚀', year: '2024' },
-  { title: '2025 FTC Summer Camp', desc: 'Running a multi-day FTC robotics camp to introduce younger students to FIRST Tech Challenge — covering robot building, programming, and competition strategy.', icon: '🏕', year: '2025' },
-  { title: 'Community Demos', desc: 'We bring our robot to local schools, libraries, and community events to demonstrate what FTC robotics looks like and inspire the next generation of builders and coders.', icon: '🤖', year: 'Ongoing' },
-  { title: 'Iron Mountain League Outreach', desc: 'Earned 2nd Place Reach Award at the 2025 Oregon State Championship for our ongoing commitment to recruiting new members and growing participation in FTC across the region.', icon: '🏅', year: '2025' },
+  { title: 'Season Kickoff Event', desc: 'Co-hosted the 2024 FTC Season Kickoff at Lake Oswego High School with 150+ attendees and 10+ teams. Featured educational presentations on CAD, Odometry, Engineering Portfolios, and more.', icon: '★', year: '2024' },
+  { title: '2025 FTC Summer Camp', desc: 'Running a multi-day FTC robotics camp to introduce younger students to FIRST Tech Challenge — covering robot building, programming, and competition strategy.', icon: '◆', year: '2025' },
+  { title: 'Community Demos', desc: 'We bring our robot to local schools, libraries, and community events to demonstrate what FTC robotics looks like and inspire the next generation of builders and coders.', icon: '◉', year: 'Ongoing' },
+  { title: 'Iron Mountain League Outreach', desc: 'Earned 2nd Place Reach Award at the 2025 Oregon State Championship for our ongoing commitment to recruiting new members and growing participation in FTC across the region.', icon: '◆', year: '2025' },
 ]
 
-const partners = [
-  {
-    name: 'Lake Oswego Middle School',
-    type: 'School Sponsor',
-    year: '2025',
-    logo: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=261,h=261,fit=crop/AoP6qzaakqczVKbE/lake-oswego-lakers-logo-ALpoZeWbJGfgKw4Z.png',
-  },
-  {
-    name: 'Lake Oswego Senior High School',
-    type: 'School Sponsor',
-    year: '2025',
-    logo: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=261,h=261,fit=crop/AoP6qzaakqczVKbE/lake-oswego-lakers-logo-ALpoZeWbJGfgKw4Z.png',
-  },
-  {
-    name: '2024 Matching Funds Sponsor',
-    type: 'Corporate Sponsor',
-    year: '2024',
-    logo: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=132,fit=crop/AoP6qzaakqczVKbE/getlargeheaderlogo-removebg-preview-YNqNo3kJoVcwNgM9.png',
-  },
-  {
-    name: '2023 Sponsor',
-    type: 'Corporate Sponsor',
-    year: '2023',
-    logo: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=268,h=179,fit=crop/AoP6qzaakqczVKbE/37c44044a73a5baeb6a334d89a625985-mjEv0LKaz6h7BbWQ.png',
-  },
-]
+const partners: { name: string; type: string; year: string }[] = []
 
 function CollaborateModal({ onClose }: { onClose: () => void }) {
   const [form, setForm] = useState({ name: '', org: '', email: '', type: 'outreach', message: '' })
@@ -130,7 +105,7 @@ export default function CommunityPage() {
             padding: '0.85rem 1.75rem', fontWeight: 700, fontSize: '0.95rem', cursor: 'pointer',
             letterSpacing: '0.04em', boxShadow: '0 0 24px rgba(255,69,0,0.4)',
           }}>
-            🤝 Collaborate With Us
+            ⬡ Collaborate With Us
           </button>
         </div>
       </section>
@@ -177,7 +152,7 @@ export default function CommunityPage() {
             {/* Become a partner CTA card */}
             <div style={{ background: 'transparent', border: '2px dashed rgba(255,69,0,0.25)', borderRadius: '0.75rem', padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', textAlign: 'center', cursor: 'pointer' }}
               onClick={() => setShowModal(true)}>
-              <div style={{ fontSize: '1.75rem' }}>➕</div>
+              <div style={{ fontSize: '1.75rem' }}>+</div>
               <div style={{ color: 'var(--text-dim)', fontSize: '0.82rem' }}>Your logo here?</div>
               <div style={{ color: 'var(--fire)', fontSize: '0.78rem', fontWeight: 700 }}>Become a partner →</div>
             </div>
@@ -190,7 +165,7 @@ export default function CommunityPage() {
               <div style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>Whether you're a school, team, business, or community group — we'd love to connect.</div>
             </div>
             <button onClick={() => setShowModal(true)} style={{ background: 'linear-gradient(135deg, var(--fire), var(--fire-glow))', color: 'white', border: 'none', borderRadius: '0.4rem', padding: '0.75rem 1.5rem', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer', whiteSpace: 'nowrap', boxShadow: '0 0 16px rgba(255,69,0,0.3)' }}>
-              🤝 Collaborate With Us
+              ⬡ Collaborate With Us
             </button>
           </div>
         </div>
