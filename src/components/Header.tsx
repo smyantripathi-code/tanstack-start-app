@@ -27,7 +27,7 @@ export default function Header() {
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
       background: scrolled ? 'rgba(14,10,14,0.97)' : 'transparent',
       backdropFilter: scrolled ? 'blur(16px)' : 'none',
-      borderBottom: scrolled ? '1px solid rgba(232,0,106,0.2)' : 'none',
+      borderBottom: scrolled ? '1px solid rgba(255,0,106,0.2)' : 'none',
       transition: 'all 0.3s ease',
       padding: '0 1.5rem',
     }}>
@@ -51,7 +51,7 @@ export default function Header() {
               fontWeight: 500, padding: '0.4rem 0.65rem', borderRadius: '0.35rem',
               transition: 'all 0.15s', letterSpacing: '0.03em',
             }}
-              activeProps={{ style: { color: 'var(--fire)', background: 'rgba(232,0,106,0.08)' } }}
+              activeProps={{ style: { color: 'var(--fire)', background: 'rgba(255,0,106,0.08)' } }}
               onMouseEnter={e => { e.currentTarget.style.color = 'var(--white)'; e.currentTarget.style.background = 'rgba(255,255,255,0.05)' }}
               onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.background = 'transparent' }}>
               {item.label}
@@ -63,11 +63,11 @@ export default function Header() {
             color: 'white', textDecoration: 'none',
             padding: '0.45rem 1.1rem', borderRadius: '0.4rem',
             fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.04em',
-            boxShadow: '0 0 16px rgba(232,0,106,0.35)',
+            boxShadow: '0 0 16px rgba(255,0,106,0.35)',
             transition: 'box-shadow 0.2s',
           }}
-            onMouseEnter={e => (e.currentTarget.style.boxShadow = '0 0 28px rgba(232,0,106,0.6)')}
-            onMouseLeave={e => (e.currentTarget.style.boxShadow = '0 0 16px rgba(232,0,106,0.35)')}>
+            onMouseEnter={e => (e.currentTarget.style.boxShadow = '0 0 28px rgba(255,0,106,0.6)')}
+            onMouseLeave={e => (e.currentTarget.style.boxShadow = '0 0 16px rgba(255,0,106,0.35)')}>
             Donate
           </a>
         </nav>
