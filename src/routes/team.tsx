@@ -9,7 +9,7 @@ const members = [
   { first: 'Beck', last: 'Fulkerson' },
   { first: 'Lucas', last: 'Kirk' },
   { first: 'Gavin', last: 'Kirk' },
-  { first: 'Doan', last: 'Lee' },
+  { first: 'Daon', last: 'Lee' },
   { first: 'Jae', last: 'Lee' },
   { first: 'Chase', last: 'Markham' },
   { first: 'Akmal', last: 'Mohaideen' },
