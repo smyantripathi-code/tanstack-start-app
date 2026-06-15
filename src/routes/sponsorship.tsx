@@ -121,51 +121,23 @@ function SponsorshipPage() {
       <section style={{ padding: '3.5rem 1.5rem', background: 'var(--dark)', borderTop: '1px solid var(--dark-border)' }}>
         <div style={{ maxWidth: '640px', margin: '0 auto' }}>
           <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', color: 'var(--fire)', letterSpacing: '0.2em', marginBottom: '0.5rem' }}>// Get In Touch</div>
-          <h2 style={{ fontFamily: "'Orbitron', sans-serif", fontSize: '1.5rem', fontWeight: 700, color: 'var(--white)', marginBottom: '0.5rem' }}>Express Interest</h2>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', marginBottom: '2rem', lineHeight: 1.7 }}>Tell us about your interest in partnering with Wire Fire. We'll follow up within 48 hours.</p>
-
-          {status === 'sent' ? (
-            <div style={{ background: 'rgba(255,0,106,0.06)', border: '1px solid rgba(255,0,106,0.25)', borderRadius: '0.75rem', padding: '2.5rem', textAlign: 'center' }}>
-              <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>🔥</div>
-              <div style={{ fontFamily: "'Orbitron', sans-serif", color: 'var(--fire)', fontWeight: 700, marginBottom: '0.5rem' }}>Message Sent!</div>
-              <div style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>We received your inquiry and will be in touch within 48 hours.</div>
-            </div>
-          ) : (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                <div>
-                  <label style={labelStyle}>First Name *</label>
-                  <input type="text" value={form.firstName} onChange={e => setForm(f => ({ ...f, firstName: e.target.value }))} style={inputStyle} />
-                </div>
-                <div>
-                  <label style={labelStyle}>Company</label>
-                  <input type="text" value={form.company} onChange={e => setForm(f => ({ ...f, company: e.target.value }))} style={inputStyle} />
-                </div>
-              </div>
-              <div>
-                <label style={labelStyle}>Your Position / Title</label>
-                <input type="text" value={form.position} onChange={e => setForm(f => ({ ...f, position: e.target.value }))} style={inputStyle} />
-              </div>
-              <div>
-                <label style={labelStyle}>Email *</label>
-                <input type="email" value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} style={inputStyle} />
-              </div>
-              <div>
-                <label style={labelStyle}>Partnership Interest Details</label>
-                <textarea value={form.details} onChange={e => setForm(f => ({ ...f, details: e.target.value }))} rows={4}
-                  placeholder="Tell us how you'd like to partner"
-                  style={{ ...inputStyle, resize: 'vertical' }} />
-              </div>
-              <button onClick={handleSubmit} disabled={status === 'sending'} style={{
-                background: 'linear-gradient(135deg, var(--fire), var(--fire-glow))',
-                color: 'white', border: 'none', borderRadius: '0.4rem',
-                padding: '0.9rem', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer',
-                letterSpacing: '0.04em', opacity: status === 'sending' ? 0.7 : 1,
-              }}>
-                {status === 'sending' ? 'Sending' : 'Submit Partnership Interest →'}
-              </button>
-            </div>
-          )}
+              <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfKn-7dYyh_QiJ-1uZ37SXMiG2PbOsJC2w4jezVJCgk_wgGqg/viewform?usp=sharing&ouid=105617262024080995837"
+            width="100%"
+            height="900"
+            frameBorder="0"
+            marginHeight={0}
+            marginWidth={0}
+            title="Wire Fire Collaboration Form"
+            style={{
+              borderRadius: '0.75rem',
+              border: '1px solid var(--dark-border)',
+              background: 'white',
+              display: 'block',
+            }}
+          >
+            Loading form...
+          </iframe>
         </div>
       </section>
     </main>
