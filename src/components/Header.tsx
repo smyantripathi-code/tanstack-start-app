@@ -8,7 +8,6 @@ const navItems = [
   { label: 'Robotics', to: '/robotics' },
   { label: 'Fundraising', to: '/fundraising' },
   { label: 'Sponsorship', to: '/sponsorship' },
-  { label: 'Camp', to: '/camp' },
   { label: 'Join', to: '/join' },
   { label: 'Contact', to: '/contact' },
 ]
@@ -26,14 +25,13 @@ export default function Header() {
   return (
     <header style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-      background: scrolled ? 'rgba(10,10,15,0.95)' : 'transparent',
+      background: scrolled ? 'rgba(14,10,14,0.97)' : 'transparent',
       backdropFilter: scrolled ? 'blur(16px)' : 'none',
-      borderBottom: scrolled ? '1px solid rgba(255,69,0,0.2)' : 'none',
+      borderBottom: scrolled ? '1px solid rgba(232,0,106,0.2)' : 'none',
       transition: 'all 0.3s ease',
       padding: '0 1.5rem',
     }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '68px' }}>
-        {/* Logo */}
         <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
           <img
             src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=94,fit=crop,q=95/AoP6qzaakqczVKbE/wire-fire-8-A85ZekpvJyIowDOR.png"
@@ -46,15 +44,14 @@ export default function Header() {
           </div>
         </Link>
 
-        {/* Desktop nav */}
-        <nav style={{ display: 'flex', gap: '0.15rem', alignItems: 'center' }}>
+        <nav style={{ display: 'flex', gap: '0.1rem', alignItems: 'center', flexWrap: 'wrap' }}>
           {navItems.map(item => (
             <Link key={item.to} to={item.to} style={{
-              textDecoration: 'none', color: 'var(--text-muted)', fontSize: '0.8rem',
-              fontWeight: 500, padding: '0.4rem 0.75rem', borderRadius: '0.35rem',
+              textDecoration: 'none', color: 'var(--text-muted)', fontSize: '0.78rem',
+              fontWeight: 500, padding: '0.4rem 0.65rem', borderRadius: '0.35rem',
               transition: 'all 0.15s', letterSpacing: '0.03em',
             }}
-              activeProps={{ style: { color: 'var(--fire)', background: 'rgba(255,69,0,0.08)' } }}
+              activeProps={{ style: { color: 'var(--fire)', background: 'rgba(232,0,106,0.08)' } }}
               onMouseEnter={e => { e.currentTarget.style.color = 'var(--white)'; e.currentTarget.style.background = 'rgba(255,255,255,0.05)' }}
               onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.background = 'transparent' }}>
               {item.label}
@@ -66,11 +63,11 @@ export default function Header() {
             color: 'white', textDecoration: 'none',
             padding: '0.45rem 1.1rem', borderRadius: '0.4rem',
             fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.04em',
-            boxShadow: '0 0 16px rgba(255,69,0,0.35)',
+            boxShadow: '0 0 16px rgba(232,0,106,0.35)',
             transition: 'box-shadow 0.2s',
           }}
-            onMouseEnter={e => (e.currentTarget.style.boxShadow = '0 0 28px rgba(255,69,0,0.6)')}
-            onMouseLeave={e => (e.currentTarget.style.boxShadow = '0 0 16px rgba(255,69,0,0.35)')}>
+            onMouseEnter={e => (e.currentTarget.style.boxShadow = '0 0 28px rgba(232,0,106,0.6)')}
+            onMouseLeave={e => (e.currentTarget.style.boxShadow = '0 0 16px rgba(232,0,106,0.35)')}>
             Donate
           </a>
         </nav>
