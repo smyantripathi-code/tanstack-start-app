@@ -30,10 +30,10 @@ const coaches = [
 ]
 
 const avatarColors = [
-  'linear-gradient(135deg, #e8006a, #8b0040)',
+  'linear-gradient(135deg, #ff006a, #8b0040)',
   'linear-gradient(135deg, #c0005a, #6d0036)',
   'linear-gradient(135deg, #ff2d8a, #a30050)',
-  'linear-gradient(135deg, #9a0048, #e8006a)',
+  'linear-gradient(135deg, #9a0048, #ff006a)',
 ]
 
 function TeamPage() {
@@ -53,7 +53,7 @@ function TeamPage() {
             Wire Fire <span style={{ color: 'var(--fire)' }}>#23260</span>
           </h1>
           <p style={{ color: 'var(--text-muted)', maxWidth: '560px', lineHeight: 1.7, fontSize: '0.95rem' }}>
-            17 middle and high school students from Lake Oswego — dedicated to engineering, programming, and pushing Wire Fire further than ever in our 2026 season.
+            16 middle and high school students from Lake Oswego - dedicated to engineering, programming, and pushing Wire Fire further than ever in our 2026 season.
           </p>
         </div>
       </section>
@@ -63,9 +63,9 @@ function TeamPage() {
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', color: 'var(--text-dim)', letterSpacing: '0.2em', marginBottom: '1.25rem' }}>// Team Photo</div>
           <div style={{
-            border: '2px dashed rgba(232,0,106,0.25)', borderRadius: '1rem',
+            border: '2px dashed rgba(255,0,106,0.25)', borderRadius: '1rem',
             padding: '3rem', textAlign: 'center',
-            background: 'rgba(232,0,106,0.03)',
+            background: 'rgba(255,0,106,0.03)',
           }}>
             <div style={{ fontFamily: "'Orbitron', sans-serif", color: 'var(--text-dim)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>Team Photo</div>
             <div style={{ color: 'var(--text-dim)', fontSize: '0.78rem' }}>Drop your team photo here to show it on this page</div>
@@ -86,7 +86,7 @@ function TeamPage() {
                 borderRadius: '0.75rem', padding: '1.25rem', textAlign: 'center',
                 transition: 'border-color 0.2s, transform 0.15s',
               }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(232,0,106,0.35)'; e.currentTarget.style.transform = 'translateY(-2px)' }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(255,0,106,0.35)'; e.currentTarget.style.transform = 'translateY(-2px)' }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--dark-border)'; e.currentTarget.style.transform = 'none' }}>
                 <div style={{
                   width: '52px', height: '52px', borderRadius: '50%', margin: '0 auto 0.75rem',
@@ -111,7 +111,7 @@ function TeamPage() {
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             {coaches.map(c => (
               <div key={c.name} style={{
-                background: 'var(--dark-card)', border: '1px solid rgba(232,0,106,0.2)',
+                background: 'var(--dark-card)', border: '1px solid rgba(255,0,106,0.2)',
                 borderRadius: '0.75rem', padding: '1.25rem 1.75rem', minWidth: '160px',
               }}>
                 <div style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 700, color: 'var(--white)', marginBottom: '0.25rem' }}>{c.name}</div>
