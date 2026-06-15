@@ -43,7 +43,7 @@ function ContactPage() {
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', color: 'var(--text-muted)', letterSpacing: '0.2em', marginBottom: '1.25rem' }}>// Contact Form</div>
           <iframe
-            src="https://forms.gle/uw1UVibnyqSmoBfj7"
+            src="https://forms.gle/d8MW1heTJ6eZ9wTo6"
             width="100%"
             height="900"
             frameBorder="0"
