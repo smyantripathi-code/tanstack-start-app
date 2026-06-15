@@ -14,9 +14,9 @@ const seasons = [
       { name: 'Iron Mountain League Meet 1', result: 'Competed' },
       { name: 'Iron Mountain League Meet 2', result: 'Competed' },
       { name: 'Iron Mountain League Meet 3', result: 'Competed' },
-      { name: 'Iron Mountain League Tournament', result: '🏆 Finalist Alliance (1st Selected) · 🏅 Inspire Award 2nd Place', highlight: true },
+      { name: 'Iron Mountain League Tournament', result: 'Finalist Alliance (1st Selected) · Inspire Award 2nd Place', highlight: true },
       { name: 'Oregon Championship – Purple Division', result: 'Competed' },
-      { name: 'Oregon Championship', result: '🥈 Reach Award 2nd Place', highlight: true },
+      { name: 'Oregon Championship', result: 'Reach Award 2nd Place', highlight: true },
     ],
   },
   {
@@ -28,7 +28,7 @@ const seasons = [
       { name: 'Rose City League Meet 1', result: 'Competed' },
       { name: 'Rose City League Meet 2', result: 'Competed' },
       { name: 'Rose City League Meet 3', result: 'Competed' },
-      { name: 'Rose City League Tournament', result: '🏆 Design Award', highlight: true },
+      { name: 'Rose City League Tournament', result: 'Design Award', highlight: true },
       { name: 'Oregon Championship – Gold Division', result: 'Competed' },
       { name: 'Oregon Championship', result: 'Competed' },
     ],
@@ -43,7 +43,7 @@ const seasons = [
       { name: 'OR Rose City League Meet 1', result: 'Competed' },
       { name: 'OR Rose City League Meet 2', result: 'Competed' },
       { name: 'OR Rose City League Meet 3', result: 'Competed' },
-      { name: 'OR Rose City League Tournament', result: '🏆 Control Award', highlight: true },
+      { name: 'OR Rose City League Tournament', result: 'Control Award', highlight: true },
       { name: 'Oregon FTC Championship – Blue Division', result: 'Competed' },
       { name: 'Oregon FTC Championship', result: 'Competed' },
     ],
@@ -51,7 +51,7 @@ const seasons = [
 ]
 
 const awards = [
-  { year: '2025', award: 'Inspire Award 2nd Place', event: 'Iron Mountain League Tournament', icon: '🏅' },
+  { year: '2025', award: 'Inspire Award 2nd Place', event: 'Iron Mountain League Tournament', icon: '◆' },
   { year: '2025', award: 'Finalist Alliance – 1st Team Selected', event: 'Iron Mountain League Tournament', icon: '🏆' },
   { year: '2025', award: 'Reach Award 2nd Place', event: 'Oregon State Championship', icon: '🥈' },
   { year: '2024', award: 'Design Award', event: 'Rose City League Tournament', icon: '🏆' },
@@ -130,7 +130,7 @@ export default function HistoryPage() {
                   <div style={{ fontFamily: "'Orbitron', sans-serif", fontSize: '1.25rem', fontWeight: 900, color: 'var(--white)' }}>{season.year}</div>
                   <div style={{ background: 'rgba(255,69,0,0.12)', border: '1px solid rgba(255,69,0,0.25)', color: 'var(--fire)', fontSize: '0.72rem', fontWeight: 700, padding: '0.2rem 0.65rem', borderRadius: '0.25rem', letterSpacing: '0.08em' }}>{season.game}</div>
                   <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>{season.league}</div>
-                  {season.note && <div style={{ background: 'rgba(0,212,255,0.1)', border: '1px solid rgba(0,212,255,0.2)', color: 'var(--electric)', fontSize: '0.7rem', fontWeight: 700, padding: '0.2rem 0.65rem', borderRadius: '0.25rem' }}>{season.note}</div>}
+                  {season.note && <div style={{ background: 'rgba(232,0,106,0.1)', border: '1px solid rgba(232,0,106,0.2)', color: 'var(--pink-soft)', fontSize: '0.7rem', fontWeight: 700, padding: '0.2rem 0.65rem', borderRadius: '0.25rem' }}>{season.note}</div>}
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                   {season.events.map((e, i) => (
