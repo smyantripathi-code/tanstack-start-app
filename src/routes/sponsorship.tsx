@@ -60,17 +60,8 @@ function SponsorshipPage() {
           {/* Current sponsors */}
           <div style={{ borderTop: '1px solid var(--dark-border)', paddingTop: '2.5rem' }}>
             <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', color: 'var(--text-dim)', letterSpacing: '0.2em', marginBottom: '1.5rem' }}>// Current Sponsors</div>
-            <div style={{ display: 'flex', gap: '3rem', flexWrap: 'wrap', alignItems: 'center', marginBottom: '0.75rem' }}>
-              <div style={{ textAlign: 'center' }}>
-                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=132,fit=crop/AoP6qzaakqczVKbE/getlargeheaderlogo-removebg-preview-YNqNo3kJoVcwNgM9.png"
-                  alt="Sponsor" style={{ height: '48px', width: 'auto', filter: 'brightness(10) grayscale(1)', opacity: 0.6 }} />
-                <div style={{ fontSize: '0.65rem', color: 'var(--text-dim)', marginTop: '0.4rem' }}>2024 Matching Funds</div>
-              </div>
-              <div style={{ textAlign: 'center', opacity: 0.4 }}>
-                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=268,h=179,fit=crop/AoP6qzaakqczVKbE/37c44044a73a5baeb6a334d89a625985-mjEv0LKaz6h7BbWQ.png"
-                  alt="2023 Sponsor" style={{ height: '48px', width: 'auto', filter: 'grayscale(1) brightness(5)' }} />
-                <div style={{ fontSize: '0.65rem', color: 'var(--text-dim)', marginTop: '0.4rem' }}>2023 Sponsor</div>
-              </div>
+            <div style={{ color: 'var(--text-dim)', fontSize: '0.85rem', fontStyle: 'italic', marginBottom: '0.75rem', fontFamily: "'JetBrains Mono', monospace" }}>
+              // No current sponsors — be the first for 2026
             </div>
             <div style={{
               border: '2px dashed rgba(255,69,0,0.2)', borderRadius: '0.75rem',
